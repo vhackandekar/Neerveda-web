@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EcoFlow Sentinel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'eco-green': '#4CAF50',
+            'eco-green-light': '#81C784',
+            'eco-blue': '#2196F3',
+            'eco-blue-light': '#64B5F6',
+            'earth-brown': '#795548',
+            'earth-brown-light': '#A1887F',
+            'status-green': '#22c55e',
+            'status-yellow': '#facc15',
+            'status-red': '#ef4444',
+            'vibrant-blue': '#0ea5e9',
+            'vibrant-blue-light': '#38bdf8',
+            'warm-brown': '#d97706',
+            'warm-brown-light': '#fbbf24',
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+          animation: {
+            shimmer: 'shimmer 4s infinite linear',
+            'water-flow': 'water-flow 2s infinite linear',
+          },
+          keyframes: {
+            shimmer: {
+              '0%': { transform: 'translateX(-100%)' },
+              '100%': { transform: 'translateX(100%)' },
+            },
+            'water-flow': {
+              '0%': { backgroundPosition: '100% 0' },
+              '100%': { backgroundPosition: '-100% 0' },
+            },
+          },
+        },
+      },
+    }
+    </script>
+    <style>
+      body {
+        overflow: hidden;
+      }
+    </style>
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.19.0",
+    "recharts": "https://aistudiocdn.com/recharts@^3.2.0",
+    "i18next": "https://aistudiocdn.com/i18next@^23.11.5",
+    "react-i18next": "https://aistudiocdn.com/react-i18next@^14.1.2",
+    "i18next-http-backend": "https://aistudiocdn.com/i18next-http-backend@^2.5.2",
+    "i18next-browser-languagedetector": "https://aistudiocdn.com/i18next-browser-languagedetector@^8.0.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

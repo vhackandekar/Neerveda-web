@@ -1,0 +1,8 @@
+{
+  "name": "NeerVeda",
+  "description": "An integrated platform for managing greywater filtration and wetland restoration using IoT and AI. It provides real-time monitoring, AI-driven insights, and community dashboards to promote water conservation and sustainable resource management in rural and semi-urban areas.",
+  "requestFramePermissions": [
+    "camera",
+    "geolocation"
+  ]
+}
